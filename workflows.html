@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+  <title>Workflows</title>
+  <style>
+    .workflow-card {
+      border: 1px solid #ccc;
+      padding: 16px;
+      margin: 10px;
+      border-radius: 8px;
+      width: 250px;
+    }
+    .trigger-btn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Available Workflows</h1>
+  <div id="workflow-cards"></div>
+
+  <button onclick="openAddWorkflowForm()" style="background-color: #FF9800;">➕ Add New Workflow</button>
+
+<div id="add-workflow-form" style="display: none; margin-top: 30px;">
+  <input type="text" id="new-workflow-name" placeholder="Workflow Name" style="padding: 8px;">
+  <input type="text" id="new-workflow-status" placeholder="Workflow Status (Active/Inactive)" style="padding: 8px;">
+  <button onclick="saveWorkflow()" style="background-color: #4CAF50;">Save Workflow</button>
+</div>
+
+
+  <div id="workflow-result" style="margin-top: 40px;"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
